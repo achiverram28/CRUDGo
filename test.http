@@ -1,3 +1,5 @@
+// This is a test.http file for testing the REST apis using REST Client extension in VS Code
+
 POST http://localhost:8080/order/create
 Content-Type: application/json
 
