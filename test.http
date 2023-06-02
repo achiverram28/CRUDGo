@@ -1,0 +1,45 @@
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+   "Category": "Starter",
+   "Dish": "French Fry",
+   "Quantity": 1,
+   "TableNumber": 1,
+   "ServerName": "John Doe",
+   "Price": 100
+   
+}
+###
+
+POST http://localhost:8080/order/create
+Content-Type: application/json
+
+{
+
+   "Category": "Starter",
+   "Dish": "Baby Corn Manchuria",
+   "Quantity": 1,
+   "TableNumber": 1,
+   "ServerName": "John Doe",
+   "Price": 150
+
+}
+###
+
+DELETE http://localhost:8080/order/delete/6479d5fe2cc8c79ab8774244
+###
+
+PUT http://localhost:8080/order/update/6479d5fe2cc8c79ab8774243
+Content-Type: application/json
+
+{
+
+   "Category": "Starter",
+   "Dish": "Paneer Tikka",
+   "Quantity": 2,
+   "TableNumber": 1,
+   "ServerName": "John Doe",
+   "Price": 200
+
+}
