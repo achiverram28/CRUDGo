@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crud-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: crud
+  template:
+    metadata:
+      labels:
+        app: crud
+    spec:
+      containers:
+        - name: crud-container
+          image: achiverram28/gocrud:latest
+          ports:
+            - containerPort: 8080
