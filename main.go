@@ -23,6 +23,7 @@ func main() {
     router.Use(cors.Default())
 
 	//Api endpoints
+	router.GET("/",routes.Welcome)
     router.POST("/order/create",routes.AddOrder)
 
 	router.GET("/orders",routes.GetOrders)
