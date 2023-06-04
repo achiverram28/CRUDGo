@@ -21,6 +21,12 @@ var validate = validator.New()
 
 var orderCollection *mongo.Collection = OpenCollection(Client, "orders")
 
+func Welcome(c *gin.Context){
+	c.JSON(http.StatusOK,gin.H{
+		"message":"Welcome to the restaurant server",
+	})
+}
+
 func AddOrder(c *gin.Context){
 
 	var ctx , cancel = context.WithTimeout(context.Background(),100*time.Second)
